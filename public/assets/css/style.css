@@ -81,6 +81,12 @@ figcaption {
     background-size: cover;
 }
 
+.map-image {
+    width: 500px;
+    height: 400px;
+    background: url("../images/map.png") center no-repeat;
+}
+
 .main-image {
     background: url("../images/bookstore.jpeg") center 30% no-repeat;
 }
@@ -104,7 +110,6 @@ h2 {
 .image-text {
     text-align: center;
     color: white;
-    /*padding: 20px;*/
     padding: 0.5em;
 }
 
@@ -199,6 +204,21 @@ p, section li {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+
+.flex-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 .button {
@@ -394,7 +414,7 @@ MEDIA QUERIES
     .line span {
         background-color: #d0d0d0;
         height: 0.063em;
-        width: 11.875em;
+        width: 1em;
     }
 
     .divider span {
@@ -406,7 +426,7 @@ MEDIA QUERIES
 @media all and (min-width: 800px) {
     /*increases line size*/
     .line span {
-        width: 12.875em;
+        display: none;
     }
 
     .divider span {
@@ -418,7 +438,8 @@ MEDIA QUERIES
 @media all and (min-width: 980px) {
     /*increases line size*/
     .line span {
-        width: 18.750em;
+        display: inline-block;
+        width: 5em;
     }
 
     .divider span {
@@ -430,9 +451,8 @@ MEDIA QUERIES
 @media all and (min-width: 1100px) {
     /*increases line size*/
     .line span {
-        width: 20.625em;
+        width: 8.5em;
     }
-
 
     .divider span {
         width: 53.125em;
@@ -448,10 +468,20 @@ JENNI
 /* HEADING COLOR */
 h1, h2, h3, h4, h5, h6 {
 	color: #5B4770;
+    text-align: left;
 }
 
 /* SELECTION LIST */
 article ul li {
     margin-left: 2em;
     list-style: circle;
+}
+
+.flex-column img {
+    width: 500px;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
 }
