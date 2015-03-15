@@ -33,3 +33,9 @@ Starting update of app: helical-rhythm-88420, version: 1
 C:\Users\stell_000\Documents\GitHub>
 
 3. If prompted to login, enter stellaluna.711@gmail.com for email and current password for that account for password
+
+
+IF CHANGES NOT TAKING EFFECT
+Go to GOogle Developers Console
+Go to Compute -> App Engine -> Versions
+and make sure the latest version is selected as the default
