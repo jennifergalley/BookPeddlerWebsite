@@ -3,9 +3,9 @@
 }
 
 /*
-=================
+====================================================================
 HEADER
-=================
+====================================================================
 */
 
 header {
@@ -44,9 +44,9 @@ header h1 {
 }
 
 /*
-=================
+=========================================================================
 MAIN IMAGE
-=================
+=========================================================================
 */
 
 figure {
@@ -81,25 +81,29 @@ figcaption {
     background-size: cover;
 }
 
+/* Map Image */
 .map-image {
     width: 500px;
     height: 400px;
     background: url("../images/map.png") center no-repeat;
 }
 
+/*Main Image */
 .main-image {
     background: url("../images/bookstore.jpeg") center 30% no-repeat;
 }
 
+/*Find Us Image */
 .find-image {
     background: url("../images/book-peddler.png") center 30% no-repeat;
 }
 
-h2, h3 {
+/*Figcaptions */
+figcaption h2, figcaption h3 {
     color: #fff;
 }
 
-h2 {
+figcaption h2 {
     font-family: 'Alice', serif;
     font-size: 3.2em;
     font-weight: bold;
@@ -119,7 +123,7 @@ figcaption {
     border-radius: 0.938em;
 }
 
-h3 {
+figcaption h3 {
     font-family: 'Open sans', sans-serif;
     font-size: 1.25em;
     line-height: 2em;
@@ -128,6 +132,7 @@ h3 {
     padding-bottom: 1.25em;
 }
 
+/* Find Us Image */
 .find-us {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -152,9 +157,9 @@ h3 {
 
 
 /*
-=================
+========================================================================
 ARTICLES
-=================
+========================================================================
 */
 
 section {
@@ -178,18 +183,36 @@ article {
     max-width: 62.5em;
 }
 
-article h1, article h2 {
+/**** Headings ******/
+article h1, article h2, article h3, article h4 {
     font-family: 'Alice', sans-serif;
-    font-size: 1.625em;
     font-weight: normal;
     padding: 0.3em 0;
 }
 
-article h2 {
+article h1, article h2 {
+    font-size: 1.625em;
+}
+
+article h3, article h4 {
+    font-size: 1.4em;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
     color: #484848;
 }
 
-p, section li {
+/****** Paragraph Text *****/
+p, table {
+    font-family: 'Alice', sans-serif;
+    color: #484848;
+    font-size: 1.2em;
+    padding-bottom: 0.625em;
+    line-height: 1.3em;
+}
+
+/****** List Element Text *****/
+section li {
     font-family: 'Open sans', sans-serif;
     font-size: 1em;
     color: #737373;
@@ -197,6 +220,7 @@ p, section li {
     padding-bottom: 0.625em;
 }
 
+/***** Flex columns *****/
 .flex-column {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -206,6 +230,7 @@ p, section li {
             flex-direction: column;
 }
 
+/***** Flex rows *****/
 .flex-row {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -235,6 +260,7 @@ aside {
     display: flex;
 }
 
+/***** Dividers *****/
 .divider {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -255,13 +281,10 @@ aside {
     width: 16.250em;
 }
 
+/***** Tables *****/
 table {
     border-collapse: collapse;
-    font-family: 'Open sans', sans-serif;
-    font-size: 1em;
-    color: #484848;
     margin-top: 0.063em;
-    margin-bottom: 0.625em;
 }
 
 td, th {
@@ -280,16 +303,16 @@ td, th {
     color: #f00;
 }
 
+/***** Phone ******/
 .phone {
     text-align: center;
-    margin-top: 1.563em;
-    margin-bottom: 0.938em;
+    margin-top: 0.5em;
 }
 
 .phone a {
     color: #f00;
     font-family: sans-serif;
-    font-size: 2.250em;
+    font-size: 1.6em;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -302,6 +325,7 @@ td, th {
     color: #f00;
 }
 
+/****** Footer ******/
 footer {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -312,8 +336,10 @@ footer {
 }
 
 footer div {
+    font-family: 'Alice', sans-serif;
     text-align: center;
     line-height: 1.375em;
+    font-size: 1.1em;
 }
 
 footer div a {
@@ -412,6 +438,7 @@ MEDIA QUERIES
     }
 
     .line span {
+        display: none;
         background-color: #d0d0d0;
         height: 0.063em;
         width: 1em;
@@ -460,16 +487,10 @@ MEDIA QUERIES
 }
 
 /*
-===================
+==========================================================================
 JENNI
-===================
+==========================================================================
 */
-
-/* HEADING COLOR */
-h1, h2, h3, h4, h5, h6 {
-	color: #5B4770;
-    text-align: left;
-}
 
 /* SELECTION LIST */
 article ul li {
@@ -477,11 +498,72 @@ article ul li {
     list-style: circle;
 }
 
-.flex-column img {
-    width: 500px;
-    height: auto;
-}
-
 .text-center {
     text-align: center;
+}
+
+/* Purple Headings */
+.section-heading {
+    color: #5B4770;
+    text-align: left;
+}
+
+h2.red {
+    margin-bottom: 0.4em;
+}
+
+
+/*
+==========================================================================
+Image Gallery - drawn from http://www.deluxeblogtips.com/2010/05/image-slider-pure-css3.html
+==========================================================================
+*/
+
+div#images {
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    background-image: url("../images/mystery.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 650px 366px;
+}
+
+div#images img {
+    width: 650px;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+}
+
+div#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+}
+
+div#images img:first-child {
+    left: 0;
+}
+
+div#slider a {
+    font-size: 1.1em;
+    text-decoration: none;
+    background: #E3F1FA;
+    border: 1px solid #C6E4F2;
+    padding: 4px 6px;
+    color: #222;
+    margin: 0.3em;
+}
+
+div#slider a:hover {
+    background: #C6E4F2;
 }
