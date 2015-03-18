@@ -498,15 +498,16 @@ article ul li {
     list-style: circle;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /* Purple Headings */
 .section-heading {
     color: #5B4770;
     text-align: left;
 }
+
+.text-center {
+    text-align: center;
+}
+
 
 h2.red {
     margin-bottom: 0.4em;
