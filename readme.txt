@@ -1,39 +1,15 @@
-HOW TO DEPLOY
-
-Note: goappengine should be installed
+Note: google appengine, Golang, and python 2.7 should be installed
 go should be in the environment variables path
 
-1. Open command line
-	1.1 Go back to Github folder
-	1.2 click in navigation bar
-	1.3 type "cmd"
-	1.4 Command line will appear in Github directory
-2. Type "goapp deploy BookPeddlerWebsite/" or whatever the folder's name is
+TO DEPLOY
+1. Open command line in Book Peddler Website folder
+2. Type "goapp deploy"
+3. If prompted to login, enter stellaluna.711@gmail.com and current password for that account
 
-C:\Users\stell_000\Documents\GitHub>goapp deploy BookPeddlerWebsite/
-05:05 PM Application: helical-rhythm-88420; version: 1
-05:05 PM Host: appengine.google.com
-05:05 PM
-Starting update of app: helical-rhythm-88420, version: 1
-05:05 PM Getting current resource limits.
-05:05 PM Scanning files on local disk.
-05:05 PM Cloning 9 application files.
-05:05 PM Uploading 1 files and blobs.
-05:05 PM Uploaded 1 files and blobs.
-05:05 PM Compilation starting.
-05:05 PM Compilation: 1 files left.
-05:05 PM Compilation completed.
-05:05 PM Starting deployment.
-05:05 PM Checking if deployment succeeded.
-05:05 PM Deployment successful.
-05:05 PM Checking if updated app version is serving.
-05:06 PM Completed update of app: helical-rhythm-88420, version: 1
-05:06 PM Uploading PageSpeed configuration.
-
-C:\Users\stell_000\Documents\GitHub>
-
-3. If prompted to login, enter stellaluna.711@gmail.com for email and current password for that account for password
-
+JUST TO TEST
+1. Open command line in Book Peddler Website folder
+2. Type "goapp serve"
+3. Go to localhost:8080 in browser to see website preview
 
 IF CHANGES NOT TAKING EFFECT
 Go to GOogle Developers Console
