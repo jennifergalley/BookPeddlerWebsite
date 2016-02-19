@@ -11,7 +11,13 @@ JUST TO TEST
 2. Type "goapp serve"
 3. Go to localhost:8080 in browser to see website preview
 
+TO PUSH TO GITHUB
+1. Commit changes using Visual Studio Code
+2. Open command line in Book Peddler Website folder
+3. Type "git push"
+4. Enter credentials for github account
+
 IF CHANGES NOT TAKING EFFECT
-Go to GOogle Developers Console
+Go to Google Developers Console
 Go to Compute -> App Engine -> Versions
 and make sure the latest version is selected as the default

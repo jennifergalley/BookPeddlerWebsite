@@ -183,6 +183,7 @@ article {
     max-width: 62.5em;
 }
 
+
 /**** Headings ******/
 article h1, article h2, article h3, article h4 {
     font-family: 'Alice', sans-serif;
@@ -472,6 +473,10 @@ MEDIA QUERIES
     .divider span {
         width: 46.875em;
     }
+    
+    article.indent {
+        padding:0 50px;
+    }
 }
 
 /*GREATER THAN 1100px*/
@@ -483,6 +488,10 @@ MEDIA QUERIES
 
     .divider span {
         width: 53.125em;
+    }
+    
+    article.indent {
+        padding:0 100px;
     }
 }
 
